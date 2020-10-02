@@ -1,0 +1,32 @@
+<content>
+
+  <div *ngFor="let item of news">
+
+
+
+
+  <mat-card [routerLink]="['/details',item.title]" routerLinkActive="routerLinkActive"  >
+    <mat-card-header>
+      <div mat-card-avatar class="avater" >
+
+        <img [src]="item.urlToImage" alt="">
+      </div>
+      <mat-card-title>{{item.title}}</mat-card-title>
+
+      <mat-card-subtitle> By {{item.author}} </mat-card-subtitle>
+      <mat-card-subtitle> Date and Time: {{item.publishedAt}} </mat-card-subtitle>
+
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{item.description}}
+      </p>
+    </mat-card-content>
+
+
+  </mat-card>
+
+  </div>
+
+
+  </content>

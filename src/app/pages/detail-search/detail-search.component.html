@@ -1,0 +1,31 @@
+<content>
+
+  <div *ngFor="let item of details">
+
+    <mat-card *ngIf="item.title==Ref" >
+      <mat-card-header>
+
+        <mat-card-title *ngIf="item.title==Ref">{{item.title}}</mat-card-title>
+
+        <mat-card-subtitle *ngIf="item.title==Ref"> By {{item.author}} </mat-card-subtitle>
+        <mat-card-subtitle *ngIf="item.title==Ref"> Date and Time: {{item.publishedAt}} </mat-card-subtitle>
+
+      </mat-card-header>
+
+      <img mat-card-image *ngIf="item.title==Ref" src={{item.urlToImage}}>
+      <mat-card-content>
+        <p *ngIf="item.title==Ref">
+          {{item.description}}
+        </p>
+      </mat-card-content>
+
+
+    </mat-card>
+
+
+  </div>
+
+</content>
+
+
+

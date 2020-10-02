@@ -1,0 +1,45 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-container {
+
+
+
+
+}
+
+mat-toolbar{
+
+
+
+}
+mat-drawer{
+
+  width: 35%;
+
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+  width: 50%;
+
+}
+li:hover
+{
+  background-color: darkcyan;
+  color: #ffffff;
+}
+a
+{
+  text-decoration: none;
+  color: #000;
+}
